@@ -1,6 +1,6 @@
 /**
  * @author Ketan Kumar
- * Illustrating Sorting of student list on different parameter using Comparator Interface and collections.
+ * Illustrating execution of thread using synchronized method in multi threading
  *
  */
 
