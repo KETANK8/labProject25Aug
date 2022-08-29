@@ -36,9 +36,12 @@ public class fileHandaling  {
 				switch(choice) {
 					
 				case 1 : System.out.println("ENTER TEXT : ");
-						String content = scan.next();
+							String content = scan.nextLine();
+							FileWriter pencil = new FileWriter(f1);
+							pencil.write(content);
+							pencil.close();
 						// Asking user what user want to write on file
-						fileHandaling.fileWrite(f1, content);// Calling file Write method to write on the file
+						//fileHandaling.fileWrite(f1, content);// Calling file Write method to write on the file
 				break;
 				
 				case 2 : fileHandaling.fileRead(f1);// Calling file Reader method to access and display the content of file
