@@ -1,6 +1,6 @@
 /**
  * @author Ketan Kumar
- * Illustrating arithmetic operation using functional interface and lambda expression
+ * Illustrating arithmetic operation using functional interface and lambda expression.
  *
  */
 
@@ -49,36 +49,27 @@ public class lambdaTask{
 			//Requesting User to select any following sorting method to sort the Student list
 			System.out.print("\n\n----CALCULATE----\n1 - Addition \n2 - Subtraction \n3 - Multiplication \n4 - Division \n5 - Exit \nENTER CHOICE : ");
 			choice = scan.nextInt();
+			
+			//Requesting user to enter two values
+			System.out.print("\nEnter First Value : ");
+			first = scan.nextInt();
+			System.out.print("Enter Next Value : ");
+			sec = scan.nextInt();
+			
 			switch(choice) {
-			case 1 : System.out.print("\nEnter First Value : ");
-					first = scan.nextInt();
-					 System.out.print("Enter Next Value : ");
-					sec = scan.nextInt();
-					//Displaying calculated addition value by passing parameter
+			case 1 ://Displaying calculated addition value by passing parameter
 					System.out.println("\nResult : "+value1.calculate(first,sec));
 					break;
 			
-			case 2 : System.out.print("\nEnter First Value : ");
-					first = scan.nextInt();
-					System.out.print("Enter Next Value : ");
-					sec = scan.nextInt();
-					//Displaying calculated subtraction value by passing parameter
+			case 2 ://Displaying calculated subtraction value by passing parameter
 					System.out.println("\nResult : "+value2.calculate(first,sec));
 					break;
 					
-			case 3 : System.out.print("\nEnter First Value : ");
-					first = scan.nextInt();
-					System.out.print("Enter Next Value : ");
-					sec = scan.nextInt();
-					//Displaying calculated multiplication value by passing parameter
+			case 3 ://Displaying calculated multiplication value by passing parameter
 					System.out.println("\nResult : "+value3.calculate(first,sec));
 					break;
 			
-			case 4 : System.out.print("\nEnter First Value : ");
-					first = scan.nextInt();
-					System.out.print("Enter Next Value : ");
-					sec = scan.nextInt();
-					//Displaying calculated division value by passing parameter
+			case 4 ://Displaying calculated division value by passing parameter
 					System.out.println("\nResult : "+value4.calculate(first,sec));
 					break;
 			
